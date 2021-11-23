@@ -1,15 +1,17 @@
 package com.example.yandexweatherapp2
 
 import android.content.Context
+import android.graphics.Bitmap
 import android.widget.Toast
 import com.android.volley.Response
+import com.android.volley.toolbox.ImageRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 
 class ApiWorker(var applicationContext: Context) {
     private var volleyQueue = Volley.newRequestQueue(applicationContext)
 
-    fun makeGetRequest(
+    fun makeGetStringRequest(
         url: String,
         callback: (String) -> Unit,
         headers: MutableMap<String, String> = hashMapOf()
@@ -31,4 +33,6 @@ class ApiWorker(var applicationContext: Context) {
 
         volleyQueue.add(request)
     }
+
+
 }

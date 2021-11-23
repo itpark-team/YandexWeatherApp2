@@ -14,8 +14,15 @@
         android:text="Load Weather" />
 
     <TextView
-        android:id="@+id/textViewJson"
+        android:id="@+id/textViewWeatherData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageViewWeatherIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
 </LinearLayout>
